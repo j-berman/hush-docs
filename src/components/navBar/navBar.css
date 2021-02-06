@@ -1,0 +1,170 @@
+#topnav {
+  border-bottom: 1px solid black;
+}
+
+.topnav-container {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+
+ul.topnav {
+  width: 100%;
+  margin: auto;
+  list-style-type: none;
+  top: 0;
+  padding: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+ul.topnav h1 {
+  font-size: unset;
+  font-weight: bold;
+  margin: 0;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+.desktop-topnav-item {
+  height: 55px;
+}
+
+.topnav-item {
+  display: block;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.desktop-topnav-item a {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.mobile-nav-bar-items {
+  display: none;
+}
+
+.dropbtn {
+  line-height: 56px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 1px solid black;
+  width: fit-content;
+  min-width: 10rem;
+}
+
+/* prevents hover on touch devices becaues it lingers after click */
+@media (hover) {
+  .dropdown:hover .dropbtn {
+    font-weight: bold;
+  }
+}
+
+.dropdown.active>.dropbtn {
+  font-weight: bold;
+}
+
+.dropdown.active>.dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  padding: .6em 1em;
+  vertical-align: middle;
+}
+
+.dropdown-item:first-child {
+  margin-top: .5em;
+}
+
+.dropdown-item:last-child {
+  margin-bottom: .5em;
+}
+
+.dropdown-divider {
+  cursor: unset;
+  border: 1px solid #e1e1e1;
+  width: 90%;
+  margin: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.dropdown-item-hover:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+}
+
+.dropdown-item a.active {
+  color: #87c6c3;
+}
+
+.mobile-nav-bar {
+  display: none;
+}
+
+/* Modal Header */
+.modal-close {
+  padding: 2px 24px;
+  padding-top: 6px;
+  text-align: right;
+  font-size: 35px;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 24px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-top: 20vh;
+  background: rgba(160, 160, 160, .6);
+  z-index: 101;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid;
+  width: 30%;
+  min-width: 330px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-spacer {
+  height: 22px;
+}
+
+

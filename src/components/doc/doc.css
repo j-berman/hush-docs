@@ -1,0 +1,74 @@
+#doc>.topnav-container {
+  margin-top: 55px;
+  border-top: 1px solid;
+}
+
+#quill-container {
+  padding-top: 160px;
+  margin: auto;
+  padding-left: 2em;  
+  padding-right: 2em;
+  height: 800px;
+}
+
+.ql-color > .ql-picker-options,
+.ql-background > .ql-picker-options {
+  width: 153px !important;
+}
+
+.ql-picker.ql-font {
+  width: 140px !important;
+}
+
+.ql-font-Consolas,
+.ql-font span[data-value="Consolas"]::before {
+  font-family: Consolas;
+}
+
+.ql-font-Monospace,
+.ql-font span[data-value="Monospace"]::before {
+  font-family: monospace;
+}
+
+.ql-font-Times-New-Roman,
+.ql-font span[data-value="Times-New-Roman"]::before {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ql-font-Impact,
+.ql-font span[data-value="Impact"]::before {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ql-font-Luminari,
+.ql-font span[data-value="Luminari"]::before {
+  font-family: Luminari;
+}
+
+.ql-font-Cursive,
+.ql-font span[data-value="Cursive"]::before {
+  font-family: cursive;
+}
+
+.ql-font-Bradley-Hand,
+.ql-font span[data-value="Bradley-Hand"]::before {
+  font-family: Bradley Hand;
+}
+
+.ql-font-Brush-Script-MT,
+.ql-font span[data-value="Brush-Script-MT"]::before {
+  font-family: Brush Script MT;
+}
+
+#toolbar,
+#editor {
+  background: white;
+}
+
+@media screen and (max-width: 768px) {
+  #quill-container {
+    padding-left: 0;
+    padding-right: 0;
+    height: 600px;
+  }
+}
