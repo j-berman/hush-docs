@@ -651,7 +651,7 @@ class Doc extends Component {
           </div>
 
           <div style={{ textAlign: 'center', paddingTop: '30px', paddingBottom: '30px', fontSize: 'small' }}>
-            This website is <a href='https://github.com/j-berman/hushdocs' target='_blank' rel='noopener noreferrer'>open source</a>
+            This website is <a href='https://github.com/j-berman/hush-docs' target='_blank' rel='noopener noreferrer'>open source</a>
           </div>
         </div>
         
