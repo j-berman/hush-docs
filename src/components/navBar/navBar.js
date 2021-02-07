@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { string, object, func } from 'prop-types'
 import './navBar.css'
 import UserModal from './userModal'
+import { createNewDoc } from '../../dexie'
 
 class NavBar extends Component {
   constructor(props) {
@@ -56,7 +57,7 @@ class NavBar extends Component {
 
           { mode !== 'dashboard' && <li className='desktop-topnav-item'><a className='topnav-item' href='#dashboard'>{'< All docs'}</a></li>}
 
-          <li className='desktop-topnav-item'><a className='topnav-item' href='#new-doc'>{'New document'}</a></li>
+          <li className='desktop-topnav-item'><span className='topnav-item hover-bold' onClick={createNewDoc}>{'New document'}</span></li>
 
           { !user
             ? <React.Fragment>

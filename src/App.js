@@ -5,7 +5,6 @@ import {
   SESSION_LENGTH 
 } from './config'
 import {
-  createNewDoc,
   initLocalData
 } from './dexie'
 import NavBar from './components/navBar/navBar'
@@ -54,12 +53,6 @@ class App extends Component {
     const hashRoute = window.location.hash.substring(1)
 
     switch (hashRoute) {
-      case 'new-doc': {
-        const docId = await createNewDoc()
-        window.location.hash = 'doc=' + docId
-        break
-      }
-
       case 'dashboard': {
         this.setState({ mode: 'dashboard' })
         break

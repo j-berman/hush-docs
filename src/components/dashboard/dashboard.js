@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import userbase from 'userbase-js'
 import './dashboard.css'
 import {
+  createNewDoc,
   getDatabases,
   getDocName,
   localTransaction,
@@ -124,7 +125,9 @@ export default class Dashboard extends Component {
                   }
                 </table>
 
-                {!docIds.length && <div className='create-doc-to-get-started'><a href='#new-doc'>Create a new document</a> to get started</div>}
+                {!docIds.length && <div className='create-doc-to-get-started'>
+                  <span className='hover-bold' style={{ textDecoration: 'underline' }} onClick={createNewDoc}>Create a new document</span> to get started
+                </div>}
 
               </div>
             </div>

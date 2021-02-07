@@ -102,7 +102,7 @@ export const createNewDoc = async () => {
     localTransaction({ databaseName: docId + '_changes', itemId: 'TextDoc', item: textDoc }),
   ])
 
-  return docId
+  window.location.hash = 'doc=' + docId
 }
 
 export const initLocalData = () => {
