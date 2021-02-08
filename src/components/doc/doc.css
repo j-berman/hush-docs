@@ -11,6 +11,15 @@
   height: 800px;
 }
 
+.ql-editor {
+  padding: 32px 36px;
+}
+
+.ql-blank::before {
+  left: unset !important;
+  right: unset !important;
+}
+
 .ql-color > .ql-picker-options,
 .ql-background > .ql-picker-options {
   width: 153px !important;
