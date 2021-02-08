@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { changeHandlerQueue } from './utils'
 import { localTransaction } from './dexie'
 
-// re-implemented to get this code to work properly
+// re-implemented to get this code to work safely for different combinations of formatting, but with worse space efficiency
 // https://github.com/automerge/automerge/blob/main/test/text_test.js
 function isEquivalent(a, b) {
   if (!a && !b) return true
@@ -65,7 +65,7 @@ function applyDeleteOp(doc, offset, op) {
     // each delete shrinks the size of the text, need to maintain the offset index for deletion
     doc.text.deleteAt(offset)
   }
-  return length
+  return offset
 }
 
 function applyRetainOp(doc, offset, op) {
